@@ -22,7 +22,7 @@ const OrderForm = () => {
             }}>
                 {productsList.map(product => (
                     <option key={product.productName} value={product.productName}>
-                        {product.productName} ({product.productPrice}€) {/* Shows on UI */}
+                        {product.productName} ({product.productPrice}€) {}
                     </option>
                 ))}
             </select><br></br>
