@@ -11,7 +11,7 @@ const AppRouter = () => {
                 <Route path="/" element={<Home />} />
                 <Route path="/product" element={
                     <>
-                        <ComponentUI image="/sunset.jpg" title="Welcome to product page!" />
+                        <ComponentUI image="/Car.jpg" title="Welcome to product page!" />
                         <OrderForm />
                     </>
                 } />
