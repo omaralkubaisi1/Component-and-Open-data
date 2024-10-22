@@ -1,14 +1,20 @@
 #componentImage {
   height: auto;
-  max-width: 15%;
-  margin-right: 10px;
-  border-radius: 15%;
+  max-width: 20%;
+  margin-right: 15px;
+  border-radius: 8px;
   object-fit: cover;
+  vertical-align: middle;
+  border: 2px solid #888888;
 }
 
 h1 {
-  font-size: 48px;
-  color: #cccccc; /* Vaalean harmaa */
+  font-size: 36px;
+  color: #cccccc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
 }
 
 div, body {
@@ -19,48 +25,85 @@ div, body {
 
 #styling {
   margin: auto;
-  width: 35%; 
-  background-color: #2c2c2c; /* Tumma harmaa */
-  padding: 1em;
-  border-radius: 8px;
-  border: 2px solid #888888; /* Harmaa */
+  width: 60%;
+  background-color: #2c2c2c;
+  padding: 2em;
+  border-radius: 12px;
+  border: 2px solid #888888;
+  box-shadow: 0 15px 20px rgba(0, 0, 0, 0.2);
 }
 
 h3 {
-  font-size: 2em;
-  color: #cccccc; /* Vaalean harmaa */
+  font-size: 1.5em;
+  color: #cccccc;
 }
 
 label {
   padding-right: 0.5em;
-  color: #aaaaaa; /* Vaaleampi harmaa */
+  color: #aaaaaa;
 }
 
 button {
   border-radius: 0.5em;
-  border: 1px solid #888888; /* Harmaa */
-  background-color: #333333; /* Tumma harmaa */
-  color: #ffffff; /* Valkoinen */
-  margin-right: 1em;
-  margin-left: 1em;
-  margin-top: 2em;
-  padding: 0.5em 1em;
+  border: 1px solid #888888;
+  background-color: #333333;
+  color: #ffffff;
+  margin: 1em;
+  padding: 0.7em 1.5em;
   cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
 button:hover {
-  background-color: #888888; /* Harmaa hover-tilassa */
+  background-color: #888888;
 }
 
 table {
   width: 100%;
   border-collapse: collapse;
   margin: 1em 0;
-  background-color: #2c2c2c; /* Tumma harmaa */
+  background-color: #2c2c2c;
 }
 
-table th, table td {
-  border: 1px solid #888888; /* Harmaa */
+table.tb th, table.tb td {
+  border: 1px solid #888888;
   padding: 0.5em;
-  text-align: center
+  text-align: center;
+  color: #e0e0e0;
+}
+
+table.tb th {
+  background-color: #333333;
+  color: #ffffff;
+}
+
+table.tb td {
+  background-color: #2c2c2c;
+}
+
+#ingredientList {
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #2c2c2c;
+  border-radius: 8px;
+  color: #e0e0e0;
+  text-align: center;
+  display: inline-block; 
+}
+
+.link-button {
+  display: inline-block;
+  margin: 10px;
+  padding: 10px 20px;
+  background-color: #333333;
+  color: #fff; 
+  text-decoration: none; 
+  border-radius: 0.5em; 
+  border: 1px solid #888888;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease; 
+}
+
+.link-button:hover {
+  background-color: #888888;
 }
